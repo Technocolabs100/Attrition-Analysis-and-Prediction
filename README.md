@@ -1,52 +1,50 @@
 # Attrition-Analysis-and-Prediction
 This project aims to provide insights into the factors influencing employee attrition and predict which employees are likely to leave the company. Let's refine the project to make it more closely aligned with real-time scenarios and address live problem statements within an organization.
 
-#### Problem Statement:
-Acme Corporation, a leading tech company, is facing a significant challenge with employee turnover. The HR department is concerned about the increasing rate of attrition, as it negatively impacts team dynamics, project continuity, and overall company morale. To address this issue, Acme Corporation wants to leverage data analytics and machine learning to understand the factors influencing employee turnover and predict which employees are likely to leave in the near future.
 
-#### Dataset:
-Acme Corporation has provided historical data on employee demographics, job satisfaction, work environment, performance metrics, and turnover status. This dataset spans the last five years and includes information on employees who have left the company and those who are still currently employed.
+# Python Data Cleaning Process:
+Data Loading: I started by loading the company attribution dataset into Python using pandas. import pandas as pd
 
-#### Business Intelligence (BI) Analysis:
-1. **Data Exploration and Visualization:**
-   - Create interactive dashboards using BI tools to visualize trends and patterns in employee turnover.
-   - Identify departments, roles, and specific projects with the highest turnover rates.
+Load the Data Set data = pd.read_csv('company_attribution_data.csv')
 
-2. **Descriptive Analytics:**
-   - Generate reports that highlight the primary reasons for attrition based on employee feedback, exit interviews, and other relevant sources.
-   - Analyze the impact of factors like job satisfaction, workload, and career growth on employee turnover.
+Data Cleaning: I performed various data cleaning tasks to ensure the dataset is ready for analysis. This included check missing values, check duplicates, and check null values.
 
-3. **Predictive Analytics with BI:**
-   - Build predictive models within the BI tools to estimate the likelihood of turnover for current employees.
-   - Implement scenario analysis to understand the potential impact of changes in satisfaction levels, compensation, or management practices.
+Check for missing values missing_values = data.isnull().sum() print("Missing Values:") print(missing_values)
 
-#### Machine Learning Model:
-1. **Data Preprocessing:**
-   - Incorporate real-time data feeds from HR systems to ensure the model is continuously updated.
-   - Dynamically handle new employee entries and update the model as employees leave or join.
+Check for duplicate values duplicate_rows = data.duplicated().sum() print("\nDuplicate Rows:") print(duplicate_rows)
 
-2. **Feature Engineering:**
-   - Include features such as recent performance reviews, project completion milestones, and employee engagement scores for a more accurate prediction.
+Data Transformation: I conducted data transformation tasks such as creating new columns, converting data types, and aggregating data as needed.
 
-3. **Model Training and Monitoring:**
-   - Implement a mechanism to retrain the machine learning model periodically with the latest data.
-   - Set up monitoring to alert HR teams when an employee's predicted turnover likelihood surpasses a certain threshold.
+Create a new column for age group data['age_group'] = pd.cut(data['age'], bins=[20, 30, 40, 50, 60, 70], labels=['20-30', '31-40', '41-50', '51-60', '61-70'])
 
-4. **Integration with BI Tools:**
-   - Embed live predictions from the machine learning model into the BI dashboards.
-   - Enable HR managers to drill down into specific departments or teams to identify high-risk individuals and take proactive measures.
+Convert categorical variables to appropriate data types data['gender'] = data['gender'].astype('category') data['department'] = data['department'].astype('category')
 
-#### Real-time Scenarios and Impact:
-1. **Proactive Employee Retention:**
-   - HR managers can use the integrated BI tools to identify high-risk employees and take proactive measures to address their concerns.
-   - Real-time alerts enable timely interventions, such as personalized career development plans or targeted retention efforts.
+Data Analysis: I conducted exploratory data analysis to gain insights into the dataset and identify trends or patterns.
 
-2. **Strategic Workforce Planning:**
-   - HR leaders can leverage predictive analytics to inform strategic workforce planning, ensuring that teams critical to ongoing projects are adequately supported.
+Calculate average age average_age = data['age'].mean()
 
-3. **Continuous Improvement:**
-   - Regular updates to the machine learning model based on real-time data allow for continuous improvement in prediction accuracy.
-   - Feedback loops from HR teams can be integrated into the model to enhance its effectiveness over time.
+Calculate percentage of attributed employees percentage_attributed = (data['attributed'].sum() / data.shape[0]) * 100
 
-By addressing the live problem statement of employee turnover at Acme Corporation, this project integrates BI tools and machine learning to provide actionable insights and empower the organization to proactively manage its workforce. The real-time nature of the analysis ensures that decision-makers have up-to-date information for effective interventions.
 
+# Tableau Dashboard Creation:
+Data Connection: I connected Tableau to the cleaned dataset and imported the necessary tables.
+
+Chart Creation:
+
+Total Employees Overview: Created a bar chart to visualize the total number of employees by gender, number of attributed employees, percentage of attributed employees, and average age.
+
+Attribution Based on Gender: Developed a pie chart to show the distribution of attributed employees by gender.
+
+Department-wise Attrition: Constructed a stacked bar chart to display attrition rates across different departments.
+
+Age Group Analysis: Designed a histogram to illustrate the distribution of employees by age group.
+
+Job Satisfaction by Job Role: Created a scatter plot to visualize job satisfaction ratings based on job roles.
+
+Education Field-wise Attrition: Developed a grouped bar chart to illustrate attrition rates by education field.
+
+Attribution Rate by Gender for Different Age Groups: Designed a heatmap to visualize attribution rates by gender across different age groups.
+
+Dashboard Summary:
+
+The interactive dashboard provides comprehensive insights into company attribution data. It allows users to explore various aspects such as gender distribution, department-wise attrition, age demographics, job satisfaction, and education field-wise attrition. Users can interact with the dashboard to gain deeper insights and identify trends or patterns. Overall, the dashboard facilitates data-driven decision-making processes for workforce management and strategic planning.
