@@ -1,0 +1,27 @@
+Excel:
+
+1 - Attrition Rate by Department:
+
+	Visualization Type: Clustered Column Chart
+	Purpose: Identify which departments have the highest attrition rates.
+
+2 - Attrition Rate by Job Role:
+
+	Visualization Type: Stacked Bar Chart
+	Purpose: Highlight attrition rates across different job roles.
+
+3 - Attrition Rate by Age Group:
+
+	Visualization Type: Line Chart
+	Purpose: Understand how age affects attrition.
+
+4 - Attrition by Gender:
+
+	Visualization Type: Pie Chart or Donut Chart
+	Purpose: Compare attrition rates between genders.
+
+5 - Attrition Rate by Years at Company:
+
+	Visualization Type: Clustered Column Chart
+	Purpose: Examine the relationship between tenure and attrition.
+
