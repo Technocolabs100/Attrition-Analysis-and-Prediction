@@ -1,0 +1,65 @@
+==> 2024-06-11 10:53:16 <==
+# cmd: /Users/mac/anaconda3/bin/conda create -p techvenv python==3.12 -y
+# conda version: 23.7.4
++conda-forge/noarch::pip-24.0-pyhd8ed1ab_0
++conda-forge/noarch::setuptools-70.0.0-pyhd8ed1ab_0
++conda-forge/noarch::tzdata-2024a-h0c530f3_0
++conda-forge/noarch::wheel-0.43.0-pyhd8ed1ab_1
++conda-forge/osx-arm64::bzip2-1.0.8-h93a5062_5
++conda-forge/osx-arm64::ca-certificates-2024.6.2-hf0a4a13_0
++conda-forge/osx-arm64::libexpat-2.6.2-hebf3989_0
++conda-forge/osx-arm64::libffi-3.4.2-h3422bc3_5
++conda-forge/osx-arm64::libsqlite-3.46.0-hfb93653_0
++conda-forge/osx-arm64::libzlib-1.3.1-hfb2fe0b_1
++conda-forge/osx-arm64::ncurses-6.5-hb89a1cb_0
++conda-forge/osx-arm64::openssl-3.3.1-hfb2fe0b_0
++conda-forge/osx-arm64::python-3.12.0-h47c9636_0_cpython
++conda-forge/osx-arm64::readline-8.2-h92ec313_1
++conda-forge/osx-arm64::tk-8.6.13-h5083fa2_1
++conda-forge/osx-arm64::xz-5.2.6-h57fd34a_0
+# update specs: ['python==3.12']
+==> 2024-06-11 11:01:10 <==
+# cmd: /Users/mac/anaconda3/condabin/conda install -c conda-forge --prefix /Users/mac/Desktop/Attrition-Analysis-and-Prediction/techvenv ipykernel -y
+# conda version: 23.7.4
++conda-forge/noarch::appnope-0.1.4-pyhd8ed1ab_0
++conda-forge/noarch::asttokens-2.4.1-pyhd8ed1ab_0
++conda-forge/noarch::comm-0.2.2-pyhd8ed1ab_0
++conda-forge/noarch::decorator-5.1.1-pyhd8ed1ab_0
++conda-forge/noarch::exceptiongroup-1.2.0-pyhd8ed1ab_2
++conda-forge/noarch::executing-2.0.1-pyhd8ed1ab_0
++conda-forge/noarch::importlib-metadata-7.1.0-pyha770c72_0
++conda-forge/noarch::importlib_metadata-7.1.0-hd8ed1ab_0
++conda-forge/noarch::ipykernel-6.29.4-pyh57ce528_0
++conda-forge/noarch::ipython-8.25.0-pyh707e725_0
++conda-forge/noarch::jedi-0.19.1-pyhd8ed1ab_0
++conda-forge/noarch::jupyter_client-8.6.2-pyhd8ed1ab_0
++conda-forge/noarch::matplotlib-inline-0.1.7-pyhd8ed1ab_0
++conda-forge/noarch::nest-asyncio-1.6.0-pyhd8ed1ab_0
++conda-forge/noarch::packaging-24.0-pyhd8ed1ab_0
++conda-forge/noarch::parso-0.8.4-pyhd8ed1ab_0
++conda-forge/noarch::pexpect-4.9.0-pyhd8ed1ab_0
++conda-forge/noarch::pickleshare-0.7.5-py_1003
++conda-forge/noarch::platformdirs-4.2.2-pyhd8ed1ab_0
++conda-forge/noarch::prompt-toolkit-3.0.47-pyha770c72_0
++conda-forge/noarch::ptyprocess-0.7.0-pyhd3deb0d_0
++conda-forge/noarch::pure_eval-0.2.2-pyhd8ed1ab_0
++conda-forge/noarch::pygments-2.18.0-pyhd8ed1ab_0
++conda-forge/noarch::python-dateutil-2.9.0-pyhd8ed1ab_0
++conda-forge/noarch::six-1.16.0-pyh6c4a22f_0
++conda-forge/noarch::stack_data-0.6.2-pyhd8ed1ab_0
++conda-forge/noarch::traitlets-5.14.3-pyhd8ed1ab_0
++conda-forge/noarch::typing_extensions-4.12.2-pyha770c72_0
++conda-forge/noarch::wcwidth-0.2.13-pyhd8ed1ab_0
++conda-forge/noarch::zipp-3.19.2-pyhd8ed1ab_0
++conda-forge/osx-arm64::debugpy-1.8.1-py312h20a0b95_0
++conda-forge/osx-arm64::jupyter_core-5.7.2-py312h81bd7bf_0
++conda-forge/osx-arm64::krb5-1.21.2-h92f50d5_0
++conda-forge/osx-arm64::libcxx-17.0.6-h5f092b4_0
++conda-forge/osx-arm64::libedit-3.1.20191231-hc8eb9b7_2
++conda-forge/osx-arm64::libsodium-1.0.18-h27ca646_1
++conda-forge/osx-arm64::psutil-5.9.8-py312he37b823_0
++conda-forge/osx-arm64::python_abi-3.12-4_cp312
++conda-forge/osx-arm64::pyzmq-26.0.3-py312hfa13136_0
++conda-forge/osx-arm64::tornado-6.4.1-py312h7e5086c_0
++conda-forge/osx-arm64::zeromq-4.3.5-hcc0f68c_4
+# update specs: ['ipykernel']
